@@ -1,5 +1,6 @@
 import "./globals.css";
 import CommandSearch from "./components/CommandSearch";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function RootLayout({
   children,
@@ -11,6 +12,7 @@ export default function RootLayout({
       <body>
         {children}
         <CommandSearch />
+        <Analytics />
       </body>
     </html>
   );
